@@ -7,13 +7,12 @@ body {
 }
 
 header {
-    background-color: #2196F3;
+    background-color: #2C3E50;
     color: white;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 header h1 {
     margin: 0;
@@ -58,13 +57,13 @@ section {
 }
 
 h2 {
-    color: #2196F3;
+    color: #2C3E50;
     font-size: 2rem;
     margin-top: 0;
 }
 
 footer {
-    background-color: #2196F3;
+    background-color: #2C3E50;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -72,4 +71,50 @@ footer {
     width: 100%;
     bottom: 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1A242F;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+form button {
+    margin-top: 1rem;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #1A242F;
 }
