@@ -19,29 +19,6 @@ header h1 {
     font-size: 2.5rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0 0;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffeb3b;
-}
-
 main {
     padding: 2rem;
     max-width: 800px;
@@ -87,40 +64,6 @@ button:hover {
     background-color: #1A242F;
 }
 
-#recipeList {
-    margin-top: 1rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-}
-
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #2C3E50;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #e3f2fd;
-}
-
-tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-tr:hover {
-    background-color: #bbdefb;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -152,3 +95,4 @@ form button {
 form button:hover {
     background-color: #1A242F;
 }
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Receta</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crear Nueva Receta</h1>
+    </header>
+    <main>
+        <section id="crearReceta">
+            <h2>Nueva Receta</h2>
+            <form id="newRecipeForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="ingredients">Ingredientes:</label>
+                <label for="ejemplo">*ejemplo: Frijoles (500 grams Cocidos), Arroz (200 grams Cocido)</label>
+                <textarea id="ingredients" name="ingredients" required></textarea>
+                <label for="instructions">Instrucciones:</label>
+                <textarea id="instructions" name="instructions" required></textarea>
+                <label for="preparationTime">Tiempo de preparación (minutos):</label>
+                <input type="number" id="preparationTime" name="preparationTime" required>
+                <label for="servings">Porciones:</label>
+                <input type="number" id="servings" name="servings" required>
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Guardar Receta</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Restaurante Ilios</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
