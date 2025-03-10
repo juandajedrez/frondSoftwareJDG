@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const recipeId = urlParams.get('id');
 
     if (recipeId) {
-        fetch(`http://localhost:8080/api/recipes/${recipeId}`)
+        fetch(`https://backend-sofware-iii.onrender.com/api/recipes/${recipeId}`)
             .then(response => response.json())
             .then(recipe => {
                 recipeDetail.innerHTML = `
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             console.log('JSON enviado:', JSON.stringify(updatedRecipe)); // Mostrar el JSON en la consola
 
-            fetch(`http://localhost:8080/api/recipes/${recipeId}`, {
+            fetch(`https://backend-sofware-iii.onrender.com/api/recipes/${recipeId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('deleteRecipe').addEventListener('click', function() {
         if (confirm('¿Estás seguro de que deseas eliminar esta receta?')) {
-            fetch(`http://localhost:8080/api/recipes/${recipeId}`, {
+            fetch(`https://backend-sofware-iii.onrender.com/api/recipes/${recipeId}`, {
                 method: 'DELETE'
             })
             .then(response => {

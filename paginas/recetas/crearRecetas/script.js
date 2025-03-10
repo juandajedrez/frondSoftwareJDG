@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             recipeStatus: "INACTIVE"
         };
 
-        fetch('http://localhost:8080/api/recipes/add', {
+        fetch('https://backend-sofware-iii.onrender.com/api/recipes/add', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

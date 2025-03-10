@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadRecipesButton.addEventListener('click', function() {
         recipeList.innerHTML = '<p>Cargando recetas...</p>'; // Indicador de carga
 
-        fetch('http://localhost:8080/api/recipes')
+        fetch('https://backend-sofware-iii.onrender.com/api/recipes')
             .then(response => response.json())
             .then(data => {
                 recipeList.innerHTML = `
